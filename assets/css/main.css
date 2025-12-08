@@ -3203,3 +3203,68 @@ input, select, textarea {
 	}
 
 /* End of media queries */
+
+/* Timeline */
+
+	.timeline {
+		position: relative;
+		padding: 2em 0 2em 3em;
+		max-width: 600px;
+	}
+
+		.timeline::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0em;
+			width: 2px;
+			background: #9a9a9a;
+		}
+
+		.timeline::after {
+			content: '';
+			position: absolute;
+			left: -5px;
+			bottom: 0;
+			width: 0;
+			height: 0;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 10px solid #9a9a9a;
+		}
+
+		.timeline-item {
+			display: flex;
+			margin-bottom: 2em;
+			position: relative;
+			align-items: flex-start;
+		}
+
+		.timeline-marker {
+			position: absolute;
+			left: -1.5em;
+			width: 12px;
+			height: 1px;
+			background: #9a9a9a;
+			margin-top: 0.8em;
+		}
+
+		.timeline-content {
+			padding: 0;
+			background: transparent;
+			border: none;
+		}
+
+			.timeline-content h4 {
+				margin: 0 0 0.2em 0;
+				color: #61686b;
+				font-size: 1em;
+				font-weight: 700;
+			}
+
+			.timeline-content p {
+				margin: 0;
+				color: #6f7577;
+				font-size: 0.95em;
+			}
