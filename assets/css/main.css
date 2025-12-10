@@ -3204,6 +3204,20 @@ input, select, textarea {
 
 /* End of media queries */
 
+/* Bibliography */
+
+	.bibliography-section {
+		text-align: left;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+
+		.bibliography-section p {
+			margin-bottom: 1.5em;
+			padding-left: 2em;
+			text-indent: -2em;
+		}
+
 /* Timeline */
 
 	.timeline {
